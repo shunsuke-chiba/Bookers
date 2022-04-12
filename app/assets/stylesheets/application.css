@@ -14,12 +14,6 @@
  *= require_self
  */
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 a:hover{
   color: #fff;
   background-color: #000;
@@ -27,6 +21,16 @@ a:hover{
 
 a{
   color: #000;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+      text-decoration-line: underline;
+      text-decoration-thickness: initial;
+      text-decoration-style: initial;
+      text-decoration-color: initial;
 }
 
 body{
@@ -52,3 +56,63 @@ a:-webkit-any-link{
    text-decoration-style: initial;
    text-decoration-color: initial;
 }
+
+#notice{
+  color: green;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+th {
+    padding-bottom: 5px;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+td {
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+} 
+
+div.field, div.actions {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
