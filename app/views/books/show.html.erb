@@ -7,6 +7,6 @@
     <strong>Body</strong>
     <%= @book.body %>
 </p>
-<%=link_to("edit", book_path(@book.id),{class:"edit"}) %>
+<%=link_to("Edit", edit_book_path(@book.id),{class:"edit"}) %>
 "|"
-<a class="back" href="/books">Back</a>
+<a class="Back" href="/books">Back</a>
