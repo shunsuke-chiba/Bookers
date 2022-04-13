@@ -1,4 +1,5 @@
-<p id="notice"></p>
+<p id="notice"><%= notice %></p>
+
 <p>
     <strong>Title</strong>
     <%= @book.title %>
@@ -7,6 +8,6 @@
     <strong>Body</strong>
     <%= @book.body %>
 </p>
-<%=link_to("Edit", edit_book_path(@book.id),{class:"edit"}) %>
-"|"
+<%=link_to("Edit", edit_book_path(@book.id),{class:"edit_#{@book.id}"}) %>
+|
 <a class="Back" href="/books">Back</a>
